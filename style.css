@@ -6,6 +6,7 @@ body {
     font-optical-sizing: auto;
     font-weight: <weight>;
     font-style: normal;
+    background-color: #CDD3FD;
 }
 
 @media (max-width: 768px) {
@@ -93,4 +94,32 @@ img {
 .padding {
     padding: 16px;
     margin: 8px;
+    width: 100%;
+    height: 100%;
 }
+
+.scrollButton {
+    position: absolute;
+    right: 0; /* Aligns the button to the right */
+    top: 50%; /* Centers the button vertically */
+    transform: translateY(-50%); /* Adjusts the button's position to be perfectly centered */
+    background-color: #4A598C; /* Button color */
+    border: none;
+    border-radius: 50%; /* Makes the button circular */
+    color: white; /* Text color */
+    font-size: 20px; /* Adjust font size as needed */
+    text-align: center;
+    line-height: 50px; /* Centers the text vertically */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.scrollButton::before {
+    content: ">"; /* Right arrow icon */
+    display: block;
+    color: white; /* White arrow */
+    font-size: 20px; /* Adjust font size as needed */
+    line-height: 50px; /* Centers the arrow vertically */
+}
+
+   
