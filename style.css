@@ -1,0 +1,62 @@
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+@media (max-width: 768px) {
+    .media-scroller,
+    .media-scroller--with-groups {
+       grid-auto-columns: 100%; /* Adjust to fit the screen width */
+    }
+   
+    .media-group {
+       grid-auto-columns: 100%; /* Adjust to fit the screen width */
+    }
+   }
+
+   @media (max-width: 768px) {
+    .media-element > img {
+       aspect-ratio: 1 / 1; /* Adjust the aspect ratio as needed */
+       object-fit: cover; /* Ensure images cover their container without distortion */
+    }
+   }
+      
+
+section {
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+h6 {
+    font-size: 12px;
+}
+
+p {
+    font-size: 16px;
+}
