@@ -27,6 +27,10 @@ body {
     }
    }
       
+   body{
+       width: 95%;
+       align-items: center;
+   }
 
 section {
     width: 100%;
@@ -87,8 +91,9 @@ p {
     object-fit: cover; /* Ensures the image covers the area without distorting its aspect ratio */
 }
 
-img {
+.imgs {
     border-radius: 8px;
+    border: 2px solid #1D2F6F ;
 }
 
 .padding {
@@ -98,28 +103,27 @@ img {
     height: 100%;
 }
 
-.scrollButton {
-    position: absolute;
-    right: 0; /* Aligns the button to the right */
-    top: 50%; /* Centers the button vertically */
-    transform: translateY(-50%); /* Adjusts the button's position to be perfectly centered */
-    background-color: #4A598C; /* Button color */
-    border: none;
-    border-radius: 50%; /* Makes the button circular */
-    color: white; /* Text color */
-    font-size: 20px; /* Adjust font size as needed */
-    text-align: center;
-    line-height: 50px; /* Centers the text vertically */
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.scrollButton::before {
-    content: ">"; /* Right arrow icon */
-    display: block;
-    color: white; /* White arrow */
-    font-size: 20px; /* Adjust font size as needed */
-    line-height: 50px; /* Centers the arrow vertically */
+.horizontal-scroll-section::-webkit-scrollbar {
+    width: 10px;
+    height: 8px; /* Width of the scrollbar */
 }
 
-   
+.horizontal-scroll-section::-webkit-scrollbar-track {
+    background: #1D2F6F; /* Color of the track */
+    border-radius: 8px;
+}
+
+.horizontal-scroll-section::-webkit-scrollbar-thumb {
+    background: #FAC748 80%; /* Color of the scroll thumb */
+    border-radius: 8px;
+}
+
+.horizontal-scroll-section::-webkit-scrollbar-thumb:hover {
+    background: #8390FA; /* Color of the scroll thumb on hover */
+}
